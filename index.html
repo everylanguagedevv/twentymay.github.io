@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Happy Birthday, Pak Ruus Sofyan S.Kom! Thank you for your patience for me, your ADHD and dyslexia student, Stephanie.</title>
+  <meta name="description" content="A birthday message for an amazing coding teacher.">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+    :root {
+      --ink: #182229;
+      --muted: #617078;
+      --paper: #f7f4ec;
+      --coral: #ff6b51;
+      --yellow: #ffd166;
+      --mint: #b9ead9;
+      --blue: #8fd3ff;
+      --line: rgba(24, 34, 41, .14);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: 'Space Grotesk', sans-serif;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      background-image: linear-gradient(rgba(24,34,41,.035) 1px, transparent 1px), linear-gradient(90deg, rgba(24,34,41,.035) 1px, transparent 1px);
+      background-size: 32px 32px;
+      content: '';
+      mask-image: linear-gradient(to bottom, black, transparent 82%);
+    }
+
+    .wrap { width: min(1120px, calc(100% - 40px)); margin: 0 auto; }
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 26px 0;
+      border-bottom: 1px solid var(--line);
+      font-family: 'DM Mono', monospace;
+      font-size: .76rem;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+    }
+    .brand { display: flex; align-items: center; gap: 10px; font-weight: 500; }
+    .brand-mark { width: 12px; height: 12px; background: var(--coral); transform: rotate(45deg); }
+    .status { color: var(--muted); }
+    .status i { display: inline-block; width: 7px; height: 7px; margin-right: 7px; border-radius: 50%; background: #35b879; }
+
+    main { padding: 76px 0 110px; }
+    .hero { display: grid; grid-template-columns: 1.05fr .95fr; align-items: center; gap: 80px; min-height: 540px; }
+    .eyebrow { margin: 0 0 22px; color: var(--coral); font-family: 'DM Mono', monospace; font-size: .78rem; letter-spacing: .12em; text-transform: uppercase; }
+    h1 { max-width: 680px; margin: 0; font-size: clamp(3.8rem, 8.4vw, 7.4rem); line-height: .91; letter-spacing: -.065em; }
+    h1 span { color: var(--coral); }
+    .intro { max-width: 480px; margin: 30px 0 0; color: var(--muted); font-size: 1.15rem; line-height: 1.65; }
+    .cta-row { display: flex; flex-wrap: wrap; align-items: center; gap: 22px; margin-top: 34px; }
+    .button { display: inline-flex; align-items: center; gap: 10px; padding: 14px 19px; border: 0; border-radius: 3px; color: #fff; background: var(--ink); font: 500 .9rem 'DM Mono', monospace; cursor: pointer; transition: transform .2s, background .2s; }
+    .button:hover { background: var(--coral); transform: translateY(-3px); }
+    .button:focus-visible { outline: 3px solid var(--yellow); outline-offset: 4px; }
+    .tiny-note { color: var(--muted); font: .75rem 'DM Mono', monospace; }
+
+    .code-card { position: relative; transform: rotate(2.5deg); padding: 12px; background: var(--ink); box-shadow: 16px 18px 0 var(--yellow); }
+    .code-top { display: flex; gap: 7px; padding: 9px 8px 13px; border-bottom: 1px solid rgba(255,255,255,.13); }
+    .dot { width: 9px; height: 9px; border-radius: 50%; }
+    .dot:nth-child(1) { background: var(--coral); } .dot:nth-child(2) { background: var(--yellow); } .dot:nth-child(3) { background: var(--mint); }
+    pre { margin: 0; padding: 28px 22px 32px; color: #e6f0ea; font: 500 clamp(.78rem, 1.7vw, 1rem)/1.8 'DM Mono', monospace; white-space: pre-wrap; }
+    .pink { color: #ff9b8b; } .gold { color: #ffd166; } .green { color: #a9e8d1; } .blue { color: #8fd3ff; }
+    .card-label { position: absolute; right: -24px; bottom: -30px; padding: 12px 16px; color: var(--ink); background: var(--mint); font-size: .88rem; font-weight: 700; transform: rotate(-5deg); }
+
+    .divider { display: flex; align-items: center; gap: 18px; margin: 60px 0 24px; color: var(--muted); font: .72rem 'DM Mono', monospace; letter-spacing: .1em; text-transform: uppercase; }
+    .divider::after { height: 1px; flex: 1; background: var(--line); content: ''; }
+    .values { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .value { min-height: 175px; padding: 24px; border-top: 3px solid var(--ink); background: rgba(255,255,255,.34); }
+    .value:nth-child(2) { border-color: var(--coral); } .value:nth-child(3) { border-color: #4f9ed0; }
+    .value-number { color: var(--muted); font: .76rem 'DM Mono', monospace; }
+    .value h2 { margin: 38px 0 8px; font-size: 1.25rem; letter-spacing: -.03em; }
+    .value p { margin: 0; color: var(--muted); font-size: .92rem; line-height: 1.5; }
+    footer { display: flex; justify-content: space-between; gap: 20px; padding: 22px 0 30px; border-top: 1px solid var(--line); color: var(--muted); font: .72rem 'DM Mono', monospace; }
+
+    .confetti { position: fixed; top: -20px; z-index: 5; width: 10px; height: 18px; opacity: 0; pointer-events: none; }
+    .confetti.drop { animation: fall 2.7s cubic-bezier(.2,.7,.4,1) forwards; }
+    @keyframes fall { 0% { opacity: 1; transform: translateY(0) rotate(0); } 100% { opacity: 0; transform: translateY(110vh) rotate(620deg); } }
+    @keyframes rise { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+    .hero-copy, .code-card, .value { animation: rise .7s both; } .code-card { animation-delay: .12s; } .value:nth-child(2) { animation-delay: .1s; } .value:nth-child(3) { animation-delay: .2s; }
+
+    @media (max-width: 760px) {
+      .wrap { width: min(100% - 28px, 560px); }
+      .topbar { padding: 20px 0; } .status { font-size: .62rem; }
+      main { padding: 50px 0 80px; } .hero { display: block; min-height: 0; }
+      h1 { font-size: clamp(3.7rem, 17vw, 6rem); } .intro { font-size: 1rem; }
+      .code-card { width: calc(100% - 18px); margin: 66px 8px 58px 0; }
+      .values { grid-template-columns: 1fr; } .value { min-height: 0; } .value h2 { margin-top: 24px; }
+      footer { display: block; } footer span { display: block; margin-top: 8px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="wrap topbar">
+    <div class="brand"><span class="brand-mark" aria-hidden="true"></span> class_of_2026</div>
+    <div class="status"><i aria-hidden="true"></i> compiling good wishes</div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero" aria-labelledby="birthday-title">
+      <div class="hero-copy">
+        <p class="eyebrow">A special build for a special mentor</p>
+        <h1 id="birthday-title">Happy<br><span>Birthday!</span></h1>
+        <p class="intro">To the teacher who turns confusing errors into tiny victories: thank you for making the world of code feel possible, one line at a time.</p>
+        <div class="cta-row">
+          <button class="button" id="celebrate" type="button"><span aria-hidden="true">&#10024;</span> Celebrate</button>
+          <span class="tiny-note">// made with appreciation</span>
+        </div>
+      </div>
+
+      <div class="code-card" aria-label="A birthday message written as code">
+        <div class="code-top"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+        <pre><span class="pink">const</span> <span class="blue">teacher</span> = {
+  patience: <span class="gold">Infinity</span>,
+  wisdom: <span class="gold">true</span>,
+  impact: <span class="green">"immeasurable"</span>
+};
+
+<span class="pink">function</span> <span class="blue">birthdayWish</span>() {
+  <span class="pink">return</span> <span class="green">"Have the best day!"</span>;
+}</pre>
+        <div class="card-label">you are the real MVP</div>
+      </div>
+    </section>
+
+    <div class="divider">what you teach us</div>
+    <section class="values" aria-label="What makes this teacher special">
+      <article class="value"><span class="value-number">01 / THE SKILL</span><h2>Curiosity</h2><p>You show us that every bug is an invitation to ask a better question.</p></article>
+      <article class="value"><span class="value-number">02 / THE ENERGY</span><h2>Encouragement</h2><p>You make progress feel worth celebrating, especially the small kind.</p></article>
+      <article class="value"><span class="value-number">03 / THE LEGACY</span><h2>Confidence</h2><p>Your lessons stay long after the editor closes. That is a rare superpower.</p></article>
+    </section>
+  </main>
+
+  <footer class="wrap"><span>with gratitude, from your students</span><span>status: grateful &#10084;</span></footer>
+
+  <script>
+    const celebrateButton = document.querySelector('#celebrate');
+    const colors = ['#ff6b51', '#ffd166', '#b9ead9', '#8fd3ff'];
+
+    celebrateButton.addEventListener('click', () => {
+      for (let index = 0; index < 42; index += 1) {
+        const piece = document.createElement('span');
+        piece.className = 'confetti drop';
+        piece.style.left = `${Math.random() * 100}vw`;
+        piece.style.background = colors[index % colors.length];
+        piece.style.animationDelay = `${Math.random() * .35}s`;
+        piece.style.transform = `rotate(${Math.random() * 90}deg)`;
+        document.body.appendChild(piece);
+        piece.addEventListener('animationend', () => piece.remove());
+      }
+      celebrateButton.innerHTML = '<span aria-hidden="true">&#10084;</span> Wish sent!';
+    }, { once: true });
+  </script>
+</body>
+</html>

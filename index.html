@@ -157,9 +157,16 @@
 
 <audio id="laguJamrud" src="jamrud-ultah.mp3" controls loop></audio>
 <script>
-  const audio = document.getElementById("laguJamrud");
-  audio.volume = 0.3; 
+  window.addEventListener("DOMContentLoaded", function() {
+    const audio = document.getElementById("laguJamrud");
+    
+    if (audio) {
+      audio.volume = 0.3; // Mengunci volume di angka 30%
+      console.log("Volume berhasil dikecilkan ke 30%!");
+    }
+  });
 </script>
+
 
   <script>
     const celebrateButton = document.querySelector('#celebrate');

@@ -167,283 +167,36 @@
 </body>
 </html>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Birthday Terminal & Confetti</title>
-    <style>
-        /* Base page styling */
-        body {
-            background-color: #0d0d0d;
-            margin: 0;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 90vh;
-            overflow-x: hidden;
-        }
-
-        /* --- FEATURE 3: CODE CONFETTI ANIMATION --- */
-        @keyframes fall {
-            0% {
-                transform: translateY(-20px) rotate(0deg);
-                opacity: 1;
-            }
-            100% {
-                transform: translateY(105vh) rotate(360deg);
-                opacity: 0;
-            }
-        }
-
-        .falling-code {
-            position: fixed;
-            font-family: monospace;
-            font-weight: bold;
-            pointer-events: none;
-            animation: fall linear forwards;
-            z-index: 9999;
-        }
-
-        /* Celebration button styling */
-        #confetti-btn {
-            background-color: #00ff00;
-            color: #000;
-            border: none;
-            padding: 12px 24px;
-            font-family: monospace;
-            font-weight: bold;
-            font-size: 1rem;
-            cursor: pointer;
-            border-radius: 4px;
-            box-shadow: 0 0 15px rgba(0, 255, 0, 0.4);
-            transition: transform 0.1s, box-shadow 0.2s;
-            margin-bottom: 30px;
-        }
-
-        #confetti-btn:hover {
-            box-shadow: 0 0 25px rgba(0, 255, 0, 0.8);
-            transform: scale(1.02);
-        }
-
-        #confetti-btn:active {
-            transform: scale(0.98);
-        }
-
-        /* --- FEATURE 2: TERMINAL CONTAINER --- */
-        .terminal-container {
-            width: 100%;
-            max-width: 650px;
-            background-color: #111;
-            border: 2px solid #333;
-            border-radius: 6px;
-            font-family: monospace;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-            overflow: hidden;
-        }
-
-        /* Window Header Mac-Style dots */
-        .terminal-header {
-            background-color: #222;
-            padding: 10px 14px;
-            display: flex;
-            align-items: center;
-            border-bottom: 1px solid #333;
-        }
-
-        .terminal-dots {
-            display: flex;
-            gap: 6px;
-            margin-right: 15px;
-        }
-
-        .dot {
-            height: 12px;
-            width: 12px;
-            border-radius: 50%;
-            display: inline-block;
-        }
-        .dot-red { background-color: #ff5f56; }
-        .dot-yellow { background-color: #ffbd2e; }
-        .dot-green { background-color: #27c93f; }
-
-        .terminal-title {
-            color: #aaa;
-            font-size: 13px;
-        }
-        
-        /* Terminal text output area */
-        #terminal-body {
-            padding: 20px;
-            color: #00ff00;
-            height: 280px;
-            overflow-y: auto;
-            font-size: 14px;
-            line-height: 1.6;
-            white-space: pre-wrap; /* Keeps code formatting clean */
-        }
-        
-        /* Terminal user input bar */
-        .terminal-input-row {
-            display: flex;
-            align-items: center;
-            background-color: #151515;
-            padding: 12px 20px;
-            border-top: 1px solid #222;
-        }
-
-        .prompt-text {
-            color: #00ff00;
-            margin-right: 10px;
-            white-space: nowrap;
-        }
-
-        #terminal-input {
-            flex: 1;
-            background: transparent;
-            border: none;
-            color: #fff;
-            font-family: monospace;
-            font-size: 14px;
-            outline: none;
-        }
-    </style>
-</head>
-<body>
-
-    <!-- Celebration Button for Confetti -->
-    <button id="confetti-btn">Execute Celebration.exe 🥳</button>
-
-    <!-- Interactive Terminal Window -->
-    <div class="terminal-container">
-        <!-- Terminal Header Bar -->
-        <div class="terminal-header">
-            <div class="terminal-dots">
-                <span class="dot dot-red"></span>
-                <span class="dot dot-yellow"></span>
-                <span class="dot dot-green"></span>
-            </div>
-            <span class="terminal-title">sofyan_terminal.sh</span>
-        </div>
-        
-        <!-- Terminal Body Output -->
-        <div id="terminal-body">Welcome to Mr. Sofyan's Birthday Terminal v1.0
-Type <span style="color: #fff; font-weight: bold;">help</span> to see available commands.
-</div>
-        
-        <!-- Terminal Input Line -->
-        <div class="terminal-input-row">
-            <span class="prompt-text">guest@sofyan-lab:~$</span>
-            <input type="text" id="terminal-input" autofocus autocomplete="off">
-        </div>
+<div class="divider">wish compiler console:</div>
+<section style="max-width: 100%; margin: 24px auto 60px; background: var(--ink); border-radius: 4px; box-shadow: 12px 14px 0 var(--blue); padding: 32px; color: #e6f0ea; font-family: 'DM Mono', monospace;">
+  <h3 style="margin-top: 0; color: var(--yellow); font-size: 1.2rem;">// Execute WishGenerator.exe</h3>
+  <p style="color: var(--muted); font-size: .85rem; margin-bottom: 24px;">Configure options below to generate a real-time appreciation log file from Steph G.H.</p>
+  
+  <div style="display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 24px;">
+    <div>
+      <label style="display: block; font-size: .75rem; color: var(--mint); margin-bottom: 6px;">[SELECT LANGUAGE]</label>
+      <select id="wish-lang" style="background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.2); color: #fff; padding: 8px 12px; font-family: 'DM Mono', monospace; outline: none; border-radius: 3px;">
+        <option value="javascript">JavaScript / Web</option>
+        <option value="python">Pythonic Clean</option>
+        <option value="emotional">Pure Gratitude</option>
+      </select>
     </div>
+    
+    <div>
+      <label style="display: block; font-size: .75rem; color: var(--mint); margin-bottom: 6px;">[SELECT VIBE]</label>
+      <select id="wish-vibe" style="background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.2); color: #fff; padding: 8px 12px; font-family: 'DM Mono', monospace; outline: none; border-radius: 3px;">
+        <option value="funny">Tech Humorous</option>
+        <option value="inspiring">Motivational</option>
+      </select>
+    </div>
+  </div>
 
-    <!-- JavaScript Logic -->
-    <script>
-        // --- FEATURE 2: TERMINAL LOGIC ---
-        const terminalInput = document.getElementById('terminal-input');
-        const terminalBody = document.getElementById('terminal-body');
+  <button id="compile-btn" type="button" style="background: var(--coral); border: none; color: #fff; padding: 12px 20px; font-family: 'DM Mono', monospace; font-weight: 500; cursor: pointer; border-radius: 3px; transition: transform .2s;">
+    Run Compilation Process ⚡
+  </button>
 
-        // List of randomized wishes for the 'wish' command
-        const wishes = [
-            "Have the best day, best coding teacher! -Steph G.H.",
-            "May your compilation times be fast and your bugs be zero today, Sir!",
-            "Thank you for being the real MVP of this coding journey!",
-            "Wishing you infinite patience, true wisdom, and immeasurable impact this year!"
-        ];
+  <div id="output-screen" style="margin-top: 28px; background: rgba(0,0,0,.25); border-left: 3px solid var(--mint); padding: 20px; line-height: 1.6; font-size: .95rem; min-height: 80px; display: none;">
+    <!-- Generated text will render safely here -->
+  </div>
+</section>
 
-        terminalInput.addEventListener('keydown', function(e) {
-            if (e.key === 'Enter') {
-                const inputVal = terminalInput.value.trim().toLowerCase();
-                
-                // Print the command typed by user
-                printLine(`guest@sofyan-lab:~$ ${terminalInput.value}`, '#fff');
-                
-                // Process Commands
-                if (inputVal === 'help') {
-                    printLine('Available commands:', '#aaa');
-                    printLine('  help    - Show this guide', '#00ff00');
-                    printLine('  wish    - Print a special birthday wish', '#00ff00');
-                    printLine('  system  - View teacher configuration statistics', '#00ff00');
-                    printLine('  clear   - Clear the terminal screen', '#00ff00');
-                } else if (inputVal === 'wish') {
-                    const randomWish = wishes[Math.floor(Math.random() * wishes.length)];
-                    printLine(`[SUCCESS] ${randomWish}`, '#ffff00');
-                    triggerConfetti(); // Automatically drop code pieces on a valid wish!
-                } else if (inputVal === 'system') {
-                    printLine('const teacher = {', '#aaa');
-                    printLine('  patience: "infinite",', '#00ff00');
-                    printLine('  wisdom: true,', '#00ff00');
-                    printLine('  impact: "immeasurable"', '#00ff00');
-                    printLine('};', '#aaa');
-                } else if (inputVal === 'clear') {
-                    terminalBody.innerHTML = '';
-                } else if (inputVal === '') {
-                    // Do nothing if empty
-                } else {
-                    printLine(`bash: command not found: ${inputVal}. Type 'help' for options.`, '#ff5f56');
-                }
-                
-                // Reset input field and auto-scroll to the bottom
-                terminalInput.value = '';
-                terminalBody.scrollTop = terminalBody.scrollHeight;
-            }
-        });
-
-        function printLine(text, color) {
-            const line = document.createElement('div');
-            line.style.color = color;
-            line.textContent = text;
-            terminalBody.appendChild(line);
-        }
-
-
-        // --- FEATURE 3: CODE CONFETTI LOGIC ---
-        const celebrateBtn = document.getElementById('confetti-btn');
-        const symbols = ['0', '1', '{', '}', ';', '++', '=>', '[]', '<>', '&&'];
-
-        celebrateBtn.addEventListener('click', triggerConfetti);
-
-        function triggerConfetti() {
-            // Generate 50 floating code elements across the view screen
-            for (let i = 0; i < 50; i++) {
-                createCodeParticle();
-            }
-        }
-
-        function createCodeParticle() {
-            const particle = document.createElement('div');
-            particle.className = 'falling-code';
-            
-            // Choose a random coding symbol
-            particle.textContent = symbols[Math.floor(Math.random() * symbols.length)];
-            
-            // Randomize positioning, speed, size, and glowing effects
-            particle.style.left = Math.random() * 100 + 'vw';
-            particle.style.top = '-20px'; // Anchors the start position above the viewport
-            particle.style.fontSize = (Math.random() * 14 + 12) + 'px';
-            
-            const duration = Math.random() * 2 + 2; // Lasts between 2 to 4 seconds
-            particle.style.animationDuration = duration + 's';
-            particle.style.animationDelay = Math.random() * 0.5 + 's';
-            
-            // Add varying shades of matrix green/white
-            const greenShades = ['#00ff00', '#55ff55', '#aaffaa', '#00cc00'];
-            particle.style.color = greenShades[Math.floor(Math.random() * greenShades.length)];
-            if (Math.random() > 0.7) {
-                particle.style.textShadow = '0 0 8px rgba(0,255,0,0.8)';
-            }
-
-            document.body.appendChild(particle);
-
-            // Remove element safely from DOM after animation completes
-            setTimeout(() => {
-                particle.remove();
-            }, (duration + 0.5) * 1000);
-        }
-    </script>
-</body>
-</html>

@@ -6,7 +6,7 @@
   <title>Happy Birthday, R.S. !!</title>
   <meta name="description" content="A birthday message for an amazing coding teacher.">
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+    @import url('https://googleapis.com');
 
     :root {
       --ink: #182229;
@@ -86,11 +86,22 @@
     .value p { margin: 0; color: var(--muted); font-size: .92rem; line-height: 1.5; }
     footer { display: flex; justify-content: space-between; gap: 20px; padding: 22px 0 30px; border-top: 1px solid var(--line); color: var(--muted); font: .72rem 'DM Mono', monospace; }
 
-    .confetti { position: fixed; top: -20px; z-index: 5; width: 10px; height: 18px; opacity: 0; pointer-events: none; }
-    .confetti.drop { animation: fall 2.7s cubic-bezier(.2,.7,.4,1) forwards; }
-    @keyframes fall { 0% { opacity: 1; transform: translateY(0) rotate(0); } 100% { opacity: 0; transform: translateY(110vh) rotate(620deg); } }
     @keyframes rise { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
     .hero-copy, .code-card, .value { animation: rise .7s both; } .code-card { animation-delay: .12s; } .value:nth-child(2) { animation-delay: .1s; } .value:nth-child(3) { animation-delay: .2s; }
+
+    /* CORE CONFETTI FRAMEWORK */
+    @keyframes codeFall {
+      0% { transform: translateY(-20px) rotate(0deg); opacity: 1; }
+      100% { transform: translateY(105vh) rotate(360deg); opacity: 0; }
+    }
+    .falling-code {
+      position: fixed;
+      font-family: 'DM Mono', monospace;
+      font-weight: bold;
+      pointer-events: none;
+      animation: codeFall linear forwards;
+      z-index: 9999;
+    }
 
     @media (max-width: 760px) {
       .wrap { width: min(100% - 28px, 560px); }
@@ -113,10 +124,10 @@
     <section class="hero" aria-labelledby="birthday-title">
       <div class="hero-copy">
         <p class="eyebrow">A special website for a special mentor...</p>
-        <h1 id="birthday-title">Happy Birthday, Mr.<br><span> Ruus Sofyan S.Kom! &#10084;</span></footer> </span></h1>
+        <h1 id="birthday-title">Happy Birthday, Mr.<br><span> Ruus Sofyan S.Kom! ❤</span></h1>
         <p class="intro">To the teacher who turns confusing errors into tiny victories, thank you for making the world of code feel possible!</p>
         <div class="cta-row">
-          <button class="button" id="celebrate" type="button"><span aria-hidden="true">&#10024;</span> Celebrate with pride!</button>
+          <button class="button" id="celebrate" type="button"><span aria-hidden="true">✨</span> Celebrate with pride!</button>
           <span class="tiny-note">// made with appreciation and attention</span>
         </div>
       </div>
@@ -138,65 +149,29 @@
 
     <div class="divider">what you teach me, your ADHD and Dyslexic student:</div>
     <section class="values" aria-label="What makes this teacher special">
-      <article class="value"><span class="value-number">01 / THE SKILL</span><h2>Curiosity</h2><p>You show me that every bug is an invitation to ask a better question.</p></article>
-      <article class="value"><span class="value-number">02 / THE ENERGY</span><h2>Encouragement</h2><p>You make my coding journey progress feel worthy.</p></article>
-      <article class="value"><span class="value-number">03 / THE LEGACY</span><h2>Confidence</h2><p>Your lessons stay long, even after you head out from the lab. That is a rare superpower, Sir!</p></article>
+      <article class="value">
+        <span class="value-number">01 //</span>
+        <h2>Resilience</h2>
+        <p>You never let errors stop the project; you taught me to read documentation calmly and step through solutions line by line.</p>
+      </article>
+      <article class="value">
+        <span class="value-number">02 //</span>
+        <h2>Logic</h2>
+        <p>Breaking massive complex problems down into tiny modular chunks until the answer clears itself right up.</p>
+      </article>
+      <article class="value">
+        <span class="value-number">03 //</span>
+        <h2>Confidence</h2>
+        <p>Showing me that dynamic development isn't just about syntax benchmarks—it is about creating tools with passion.</p>
+      </article>
     </section>
-  </main>
 
-  <footer class="wrap"><span>with gratitude, from your student, Stephanie Gracia H.</span><span>status: grateful, graceful, joyful &#10084;</span></footer>
-
-  <script>
-    const celebrateButton = document.querySelector('#celebrate');
-    const colors = ['#ff6b51', '#ffd166', '#b9ead9', '#8fd3ff'];
-
-    celebrateButton.addEventListener('click', () => {
-      for (let index = 0; index < 42; index += 1) {
-        const piece = document.createElement('span');
-        piece.className = 'confetti drop';
-        piece.style.left = `${Math.random() * 100}vw`;
-        piece.style.background = colors[index % colors.length];
-        piece.style.animationDelay = `${Math.random() * .35}s`;
-        piece.style.transform = `rotate(${Math.random() * 90}deg)`;
-        document.body.appendChild(piece);
-        piece.addEventListener('animationend', () => piece.remove());
-      }
-      celebrateButton.innerHTML = '<span aria-hidden="true">&#10084;</span> Wish sent!';
-    }, { once: true });
-  </script>
-</body>
-</html>
-
-<div class="divider">wish compiler console:</div>
-<section style="max-width: 100%; margin: 24px auto 60px; background: var(--ink); border-radius: 4px; box-shadow: 12px 14px 0 var(--blue); padding: 32px; color: #e6f0ea; font-family: 'DM Mono', monospace;">
-  <h3 style="margin-top: 0; color: var(--yellow); font-size: 1.2rem;">// Execute WishGenerator.exe</h3>
-  <p style="color: var(--muted); font-size: .85rem; margin-bottom: 24px;">Configure options below to generate a real-time appreciation log file from Steph G.H.</p>
-  
-  <div style="display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 24px;">
-    <div>
-      <label style="display: block; font-size: .75rem; color: var(--mint); margin-bottom: 6px;">[SELECT LANGUAGE]</label>
-      <select id="wish-lang" style="background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.2); color: #fff; padding: 8px 12px; font-family: 'DM Mono', monospace; outline: none; border-radius: 3px;">
-        <option value="javascript">JavaScript / Web</option>
-        <option value="python">Pythonic Clean</option>
-        <option value="emotional">Pure Gratitude</option>
-      </select>
-    </div>
-    
-    <div>
-      <label style="display: block; font-size: .75rem; color: var(--mint); margin-bottom: 6px;">[SELECT VIBE]</label>
-      <select id="wish-vibe" style="background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.2); color: #fff; padding: 8px 12px; font-family: 'DM Mono', monospace; outline: none; border-radius: 3px;">
-        <option value="funny">Tech Humorous</option>
-        <option value="inspiring">Motivational</option>
-      </select>
-    </div>
-  </div>
-
-  <button id="compile-btn" type="button" style="background: var(--coral); border: none; color: #fff; padding: 12px 20px; font-family: 'DM Mono', monospace; font-weight: 500; cursor: pointer; border-radius: 3px; transition: transform .2s;">
-    Run Compilation Process ⚡
-  </button>
-
-  <div id="output-screen" style="margin-top: 28px; background: rgba(0,0,0,.25); border-left: 3px solid var(--mint); padding: 20px; line-height: 1.6; font-size: .95rem; min-height: 80px; display: none;">
-    <!-- Generated text will render safely here -->
-  </div>
-</section>
-
+    <!-- NEW INTERACTIVE FEATURE: GENERATIVE WISH COMPILER -->
+    <div class="divider">wish compiler console:</div>
+    <section style="max-width: 100%; margin: 24px auto 60px; background: var(--ink); border-radius: 4px; box-shadow: 12px 14px 0 var(--blue); padding: 32px; color: #e6f0ea; font-family: 'DM Mono', monospace;">
+      <h3 style="margin-top: 0; color: var(--yellow); font-size: 1.2rem; font-weight: 500;">// Execute WishGenerator.exe</h3>
+      <p style="color: var(--muted); font-size: .85rem; margin-bottom: 24px;">Configure options below to generate a real-time appreciation log file from Steph G.H.</p>
+      
+      <div style="display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 24px;">
+        <div>
+          <label style="display: block; font-size: .75rem; color: var(--mint); margin-bottom: 6px;">[SELECT LANGUAGE]</label>

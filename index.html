@@ -155,18 +155,11 @@
 
   <footer class="wrap"><span>with gratitude, from your student, Stephanie Gracia H.</span><span>status: grateful, graceful, joyful &#10084;</span></footer>
 
-<audio id="laguJamrud" src="jamrud-ultah.mp3" controls loop></audio>
+  <audio id="laguJamrud" src="jamrud-ultah.mp3" autoplay loop></audio>
 <script>
-  window.addEventListener("DOMContentLoaded", function() {
-    const audio = document.getElementById("laguJamrud");
-    
-    if (audio) {
-      audio.volume = 0.3; // Mengunci volume di angka 30%
-      console.log("Volume berhasil dikecilkan ke 30%!");
-    }
-  });
+  const audio = document.getElementById("laguJamrud");
+  if (audio) { audio.volume = 0.3; }
 </script>
-
 
   <script>
     const celebrateButton = document.querySelector('#celebrate');

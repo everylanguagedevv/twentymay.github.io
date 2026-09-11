@@ -45,10 +45,19 @@ saya tidak akan pernah lupa mencantumkan nama "Ruus Sofyan" sebagai orang, sebag
 Kalo bapak bisa lihat file ini, tolong dibaca ya wkwkwkwk..genuine note nih. Dari Stephh untuk Ruuss.*/
 
 function jalankanHitungMundur() {
-  const waktuTarget = new Date('May 20, 2027 00:00:00').getTime();
-  
   setInterval(() => {
-    const waktuSekarang = new Date().getTime();
+    const sekarang = new Date();
+    const tahunSekarang = sekarang.getFullYear();
+    
+    // Tentukan target tanggal 20 Mei di tahun berjalan
+    let waktuTarget = new Date(`May 20, ${tahunSekarang} 00:00:00`).getTime();
+    const waktuSekarang = sekarang.getTime();
+
+    // JIKA tanggal 20 Mei tahun ini sudah lewat, otomatis target ganti ke 20 Mei TAHUN DEPAN
+    if (waktuTarget - waktuSekarang < 0) {
+      waktuTarget = new Date(`May 20, ${tahunSekarang + 1} 00:00:00`).getTime();
+    }
+
     const selisih = waktuTarget - waktuSekarang;
 
     const hari = Math.floor(selisih / (1000 * 60 * 60 * 24));
@@ -64,4 +73,3 @@ function jalankanHitungMundur() {
 }
 
 jalankanHitungMundur();
-

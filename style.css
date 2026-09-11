@@ -347,3 +347,35 @@ footer {
     margin-top: 8px; 
   }
 }
+
+.countdown-container {
+  display: flex;
+  gap: 12px;
+  margin: 25px 0;
+  font-family: 'DM Mono', monospace;
+}
+
+.countdown-item {
+  background: rgba(24, 34, 41, 0.04);
+  border: 1px solid var(--line);
+  padding: 8px 12px;
+  border-radius: 6px;
+  text-align: center;
+  min-width: 65px;
+  box-shadow: 4px 4px 0 var(--line);
+}
+
+.countdown-item span {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--coral);
+  display: block;
+}
+
+.countdown-item p {
+  margin: 2px 0 0;
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  color: var(--muted);
+  letter-spacing: 0.05em;
+}

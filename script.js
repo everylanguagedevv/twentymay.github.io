@@ -41,5 +41,27 @@ apakah kasih itu akan berubah hanya karena anaknya memiliki satu kelemahan yang 
 Pengasuh/pengajar yang benar itu justru menganggap bahwa kelemahannya itu tuh superpower terpendam yang dimiliki anaknya. 
 Orang yang baik akan selalu menganggap bahwa setiap kelemahan memiliki kekuatan yang tersembunyi, 
 jauh lebih berpengaruh daripada kelihatannya. Suatu saat nanti saya sukses dan terkenal, 
-saya tidak akan pernah lupa mencantumkan nama "Ruus Sofyan" sebagai orang, sebagai mentor, sebagai pengasuh ayng sudah berjasa. 
+saya tidak akan pernah lupa mencantumkan nama "Ruus Sofyan" sebagai orang, sebagai mentor, sebagai pengasuh yang sudah berjasa. 
 Kalo bapak bisa lihat file ini, tolong dibaca ya wkwkwkwk..genuine note nih. Dari Stephh untuk Ruuss.*/
+
+function jalankanHitungMundur() {
+  const waktuTarget = new Date('May 20, 2027 00:00:00').getTime();
+  
+  setInterval(() => {
+    const waktuSekarang = new Date().getTime();
+    const selisih = waktuTarget - waktuSekarang;
+
+    const hari = Math.floor(selisih / (1000 * 60 * 60 * 24));
+    const jam = Math.floor((selisih % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const menit = Math.floor((selisih % (1000 * 60 * 60)) / (1000 * 60));
+    const detik = Math.floor((selisih % (1000 * 60)) / 1000);
+
+    document.getElementById('days').innerText = String(hari).padStart(2, '0');
+    document.getElementById('hours').innerText = String(jam).padStart(2, '0');
+    document.getElementById('minutes').innerText = String(menit).padStart(2, '0');
+    document.getElementById('seconds').innerText = String(detik).padStart(2, '0');
+  }, 1000);
+}
+
+jalankanHitungMundur();
+

@@ -49,11 +49,11 @@ function jalankanHitungMundur() {
     const sekarang = new Date();
     const tahunSekarang = sekarang.getFullYear();
     
-    // Tentukan target tanggal 20 Mei di tahun berjalan
+    /*Tentukan target tanggal 20 Mei...Well sekarang posisinya masih di 2026 wkwk*/
     let waktuTarget = new Date(`May 20, ${tahunSekarang} 00:00:00`).getTime();
     const waktuSekarang = sekarang.getTime();
 
-    // JIKA tanggal 20 Mei tahun ini sudah lewat, otomatis target ganti ke 20 Mei TAHUN DEPAN
+    /*JIKA tanggal 20 Mei tahun ini sudah lewat, otomatis target ganti ke 20 Mei tahun depan*/
     if (waktuTarget - waktuSekarang < 0) {
       waktuTarget = new Date(`May 20, ${tahunSekarang + 1} 00:00:00`).getTime();
     }
@@ -73,3 +73,10 @@ function jalankanHitungMundur() {
 }
 
 jalankanHitungMundur();
+
+/*Semoga penjelasan saya dapat dipahami oleh bapak, terimakasih banyak telah membaca seluruh web saya! 
+Next time kalo mau kolaborasi, tolong WA saya langsung / DM di Insta ya pak...
+(Pls dong pak ajarin HTML/CSS sama JS lebih lanjut, in exchange saya ajarin bapak C++ deh wkwk)
+(Bingung banget pake frontend sebagai orang backend (apalagi orang C++ gitu kan yakkkk), so pls banget pakkk
+Duh yaampun kebanyakan teks disini, kalo saya kasih filenya ke bapak, terus kalo bapak sempet bacain beginian juga,
+salut sih sayaaaaa wkwk (ah udah sampe sini aja note nya, thx sudah menjadi mentor terbaik di hidup saya!!!*/

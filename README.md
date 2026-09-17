@@ -9,8 +9,8 @@ Please do not share this link publicly...otherwise...i might track ya.
 
 ## What's Inside
 - A special birthday message and celebration
-- Audio: Jamrud - Ultah
-- Interactive features and styling
+- Audio: Jamrud yang paling laris ituloh...HBD!
+- Interactive features and styling dong wkwk
 
 ## Technologies
 - HTML5
@@ -18,4 +18,4 @@ Please do not share this link publicly...otherwise...i might track ya.
 - Vanilla JavaScript
 
 ## How to Open
-Simply visit the GitHub Pages URL and enjoy! 🎂
+Simply visit the GitHub Pages URL and enjoy!! Btw lagu Indo enak juga ya, baru nyadar wkwk

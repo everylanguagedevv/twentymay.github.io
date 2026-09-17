@@ -81,4 +81,14 @@ Next time kalo mau kolaborasi, tolong WA saya langsung / DM di Insta ya pak...
 Duh yaampun kebanyakan teks disini, kalo saya kasih filenya ke bapak, terus kalo bapak sempet bacain beginian juga,
 salut sih sayaaaaa wkwk (ah udah sampe sini aja note nya, thx sudah menjadi mentor terbaik di hidup saya!!!)
 eh tapi boong, sengaja buat note beginian biar javascriptnya keliatan gede persentase nya (eh udah ngomong ini belum ya? lupa wkwk)
-pokoknya ya pak, saya mau yang terbaik buat bapak!!*/
+pokoknya ya pak, saya mau yang terbaik buat bapak!! saya juga mau kali buat bapak selalu tersenyum dan tertawa terus,
+in a positive way of course dong. Saya maunya ini kita saling respect nih yaaaa, mungkin saya bakalan banyak nanya soal..
+kompetisi, dunia perkuliahan, dan lain-lainnya seputar coding! Terimakasih telah mengisi orang-orang kosong yang sudah..
+meninggalkan saya tanpa kabar, like imagine aja sih pak..ditinggalin orang tanpa kabar, karena saya orangnya ini...
+overthinking, ya jadinya selalu bawa ribet gitu, kayak gak tenang kalo di detik itu ga mikirin apa-apa,
+otak saya ini udah kayak mesin yang gaboleh mati, alias kayak warmer yang ada dirumah saya yang harus selalu nyala,
+biar alergi dingin saya ga kambuh, saya baru sadar ternyata bapak ini orangnya tuh simpel, ga ambil pusing,
+dan sudah pasti harus ambil contoh dari bapak buat menghadapi dunia yang abu-abu ini!
+(saya baru nyadar juga kalo bapak ini orangnya itu tuh kayak suka nge-blend di background gitu, ga suka jadi atensi, 
+sama kayak saya sih wkwk) Tapi disini saya mau tegasin...Tetaplah jadi diri bapak sendiri, gausah diubah sedikitpun,
+udah pas kok bapak kayak begitu. Justru bagus malah, wkwk. Sampai disini saja note saya, itu aja sih pak!*/

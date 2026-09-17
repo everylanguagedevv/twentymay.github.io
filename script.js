@@ -79,4 +79,6 @@ Next time kalo mau kolaborasi, tolong WA saya langsung / DM di Insta ya pak...
 (Pls dong pak ajarin HTML/CSS sama JS lebih lanjut, in exchange saya ajarin bapak C++ deh wkwk)
 (Bingung banget pake frontend sebagai orang backend (apalagi orang C++ gitu kan yakkkk), so pls banget pakkk
 Duh yaampun kebanyakan teks disini, kalo saya kasih filenya ke bapak, terus kalo bapak sempet bacain beginian juga,
-salut sih sayaaaaa wkwk (ah udah sampe sini aja note nya, thx sudah menjadi mentor terbaik di hidup saya!!!*/
+salut sih sayaaaaa wkwk (ah udah sampe sini aja note nya, thx sudah menjadi mentor terbaik di hidup saya!!!)
+eh tapi boong, sengaja buat note beginian biar javascriptnya keliatan gede persentase nya (eh udah ngomong ini belum ya? lupa wkwk)
+pokoknya ya pak, saya mau yang terbaik buat bapak!!*/

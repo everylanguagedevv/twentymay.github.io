@@ -91,4 +91,4 @@ biar alergi dingin saya ga kambuh, saya baru sadar ternyata bapak ini orangnya t
 dan sudah pasti harus ambil contoh dari bapak buat menghadapi dunia yang abu-abu ini!
 (saya baru nyadar juga kalo bapak ini orangnya itu tuh kayak suka nge-blend di background gitu, ga suka jadi atensi, 
 sama kayak saya sih wkwk) Tapi disini saya mau tegasin...Tetaplah jadi diri bapak sendiri, gausah diubah sedikitpun,
-udah pas kok bapak kayak begitu. Justru bagus malah, wkwk. Sampai disini saja note saya, itu aja sih pak!*/
+udah pas kok bapak kayak begitu. Justru bagus malah, wkwk. Sampai disini saja note saya, itu aja sih pak! Maturnuwun sanget pak! */

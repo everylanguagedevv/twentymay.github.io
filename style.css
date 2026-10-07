@@ -24,7 +24,7 @@ body {
   margin: 0;
   color: var(--ink);
   background: var(--paper);
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: "Space Mono", "Courier New", monospace;
   overflow-x: hidden;
 }
 

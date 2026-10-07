@@ -1,5 +1,9 @@
 @import url('https://googleapis.com');
 
+body {
+  font-family: "Tinos", "Times New Roman", Times, serif;
+}
+
 :root {
   --ink: #182229;
   --muted: #617078;
